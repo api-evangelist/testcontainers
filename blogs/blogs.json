@@ -1,0 +1,14 @@
+{
+  "repo": "testcontainers",
+  "feeds": [
+    {
+      "source": "https://newsletter.testcontainers.com/",
+      "feed_url": "https://newsletter.testcontainers.com/",
+      "title": "Testcontainers Newsletter / Updates",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-06-12T00:00:00Z"
+}

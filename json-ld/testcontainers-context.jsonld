@@ -1,0 +1,67 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "tc": "https://testcontainers.com/vocab#",
+    "aid": "https://apis.io/vocab#aid",
+    "humanURL": "https://apis.io/vocab#humanURL",
+    "baseURL": "https://apis.io/vocab#baseURL",
+    "name": "schema:name",
+    "description": "schema:description",
+    "url": "schema:url",
+    "documentation": "schema:documentation",
+    "SoftwareApplication": "schema:SoftwareApplication",
+    "SoftwareSourceCode": "schema:SoftwareSourceCode",
+    "SoftwareTesting": {
+      "@id": "tc:SoftwareTesting",
+      "@type": "@id"
+    },
+    "ContainerImage": {
+      "@id": "tc:ContainerImage",
+      "@type": "@id"
+    },
+    "WorkerMinutes": {
+      "@id": "tc:WorkerMinutes",
+      "@type": "@id"
+    },
+    "CloudAgent": {
+      "@id": "tc:CloudAgent",
+      "@type": "@id"
+    },
+    "ServiceAccountToken": {
+      "@id": "tc:ServiceAccountToken",
+      "@type": "@id"
+    },
+    "IntegrationTest": {
+      "@id": "tc:IntegrationTest",
+      "@type": "@id"
+    },
+    "DockerContainer": {
+      "@id": "tc:DockerContainer",
+      "@type": "@id"
+    },
+    "TestSession": {
+      "@id": "tc:TestSession",
+      "@type": "@id"
+    },
+    "tags": "schema:keywords",
+    "provider": "schema:provider",
+    "license": "schema:license",
+    "version": "schema:version"
+  },
+  "@type": "SoftwareApplication",
+  "@id": "https://testcontainers.com/",
+  "name": "Testcontainers",
+  "description": "Open-source library ecosystem providing throwaway, lightweight Docker container instances for integration testing, plus Testcontainers Cloud for hosted container runtimes in CI/CD pipelines.",
+  "url": "https://testcontainers.com/",
+  "documentation": "https://testcontainers.com/cloud/docs/",
+  "provider": {
+    "@type": "Organization",
+    "name": "AtomicJar / Docker",
+    "url": "https://testcontainers.com/",
+    "sameAs": [
+      "https://github.com/testcontainers",
+      "https://x.com/testcontainers",
+      "https://www.linkedin.com/company/atomicjar"
+    ]
+  }
+}

@@ -93,6 +93,10 @@ common:
     url: rate-limits/testcontainers-rate-limits.yml
   - type: FinOps
     url: finops/testcontainers-finops.yml
+  - type: BlogFeeds
+    url: blogs/blogs.json
+  - type: JSONLDContext
+    url: json-ld/testcontainers-context.jsonld
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
