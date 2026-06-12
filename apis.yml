@@ -1,0 +1,98 @@
+---
+aid: testcontainers
+name: Testcontainers
+description: >-
+  Testcontainers is an open-source library ecosystem that provides throwaway,
+  lightweight Docker container instances for integration testing across more than
+  a dozen programming languages including Java, Go, .NET, Node.js, and Python.
+  Developers define real test dependencies — databases, message brokers, browsers
+  — as code rather than relying on mocks or shared environments. Testcontainers
+  Cloud extends the library to a hosted container runtime service that runs
+  container-backed tests in the cloud, eliminating the need for a local Docker
+  daemon and enabling parallel execution in CI/CD pipelines. The platform
+  authenticates via a TC_CLOUD_TOKEN environment variable or service account
+  token, and usage is metered in Worker Minutes bundled with Docker Pro, Team,
+  and Business subscriptions.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Testing
+  - Integration Testing
+  - Docker
+  - Containers
+  - CI/CD
+  - Developer Tools
+url: https://raw.githubusercontent.com/api-evangelist/testcontainers/refs/heads/main/apis.yml
+created: '2026-06-12'
+modified: '2026-06-12'
+specificationVersion: '0.19'
+apis:
+  - aid: testcontainers:cloud-agent-api
+    name: Testcontainers Cloud Agent API
+    description: >-
+      The Testcontainers Cloud Agent API enables CI/CD pipelines and desktop
+      environments to allocate hosted Docker container workers in the cloud.
+      Authentication is performed via TC_CLOUD_TOKEN service account tokens;
+      usage is metered in Worker Minutes and configurable through environment
+      variables and agent command-line flags.
+    humanURL: https://testcontainers.com/cloud/docs/
+    baseURL: https://app.testcontainers.cloud
+    tags:
+      - Containers
+      - Testing
+      - CI/CD
+      - Docker
+    properties:
+      - type: Documentation
+        url: https://testcontainers.com/cloud/docs/
+  - aid: testcontainers:open-source-libraries
+    name: Testcontainers Open-Source Libraries
+    description: >-
+      A family of open-source libraries providing a programmatic API for
+      spinning up and tearing down Docker containers in automated tests.
+      Implementations exist for Java, Go, .NET, Node.js, Python, Rust, Haskell,
+      Ruby, Clojure, Elixir, PHP, and Native (C), each with language-specific
+      documentation and package registries.
+    humanURL: https://testcontainers.com/getting-started/
+    baseURL: https://github.com/testcontainers
+    tags:
+      - Open Source
+      - Testing
+      - Docker
+      - Libraries
+      - SDKs
+    properties:
+      - type: Documentation
+        url: https://testcontainers.com/getting-started/
+      - type: GitHubRepository
+        url: https://github.com/testcontainers
+common:
+  - type: Website
+    url: https://testcontainers.com/
+  - type: Documentation
+    url: https://testcontainers.com/cloud/docs/
+  - type: GettingStarted
+    url: https://testcontainers.com/getting-started/
+  - type: GitHubOrganization
+    url: https://github.com/testcontainers
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/atomicjar
+  - type: Blog
+    url: https://atomicjar.com/category/testcontainers/
+  - type: Newsletter
+    url: https://newsletter.testcontainers.com/
+  - type: Pricing
+    url: https://testcontainers.com/cloud/pricing/
+  - type: X
+    url: https://x.com/testcontainers
+  - type: Slack
+    url: https://slack.testcontainers.org/
+  - type: Plans
+    url: plans/testcontainers-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/testcontainers-rate-limits.yml
+  - type: FinOps
+    url: finops/testcontainers-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

@@ -1,0 +1,59 @@
+---
+specification: API Commons Rate Limits
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/RateLimits
+provider: Testcontainers
+providerId: testcontainers
+created: '2026-06-12'
+modified: '2026-06-12'
+reconciled: true
+tags:
+  - Rate Limiting
+  - Testing
+  - Docker
+  - Containers
+description: >-
+  Testcontainers Cloud does not publish explicit per-request HTTP rate limits.
+  Usage is governed by Worker Minute quotas tied to subscription plan (Docker
+  Pro: 100/month, Team: 500/month, Business: 1,500/month) and a fair-use
+  Desktop cap of 3,000 Worker Minutes per seat per month. Free trial accounts
+  are limited to 50 Worker Minutes total (one-time) and a single concurrent
+  CI session. Concurrency can be tuned via the TC_CLOUD_CONCURRENCY environment
+  variable or the --max-concurrency agent flag.
+sources:
+  - https://testcontainers.com/cloud/docs/
+headers:
+  retryAfter: Retry-After
+responseCodes:
+  throttled: 429
+limits:
+  - name: Free Trial Cloud Runtime
+    scope: user
+    metric: worker_minutes_lifetime
+    limit: 50
+    timeFrame: usage
+  - name: Docker Pro Monthly Worker Minutes
+    scope: user
+    metric: worker_minutes
+    limit: 100
+    timeFrame: month
+  - name: Docker Team Monthly Worker Minutes
+    scope: user
+    metric: worker_minutes
+    limit: 500
+    timeFrame: month
+  - name: Docker Business Monthly Worker Minutes
+    scope: user
+    metric: worker_minutes
+    limit: 1500
+    timeFrame: month
+  - name: Desktop Fair Use Quota (paid seats)
+    scope: user
+    metric: worker_minutes
+    limit: 3000
+    timeFrame: month
+  - name: Free Trial Concurrent CI Sessions
+    scope: key
+    metric: concurrent_sessions
+    limit: 1
+    timeFrame: usage

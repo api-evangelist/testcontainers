@@ -1,0 +1,143 @@
+---
+specification: API Commons Plans
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/Plans
+provider: Testcontainers
+providerId: testcontainers
+created: '2026-06-12'
+modified: '2026-06-12'
+reconciled: true
+tags:
+  - Testing
+  - Docker
+  - Containers
+  - CI/CD
+description: >-
+  Testcontainers Cloud runtime is bundled with Docker subscription plans (Pro,
+  Team, Business). Each plan includes a monthly allotment of Worker Minutes
+  usable on Desktop and in CI pipelines. The open-source Testcontainers
+  libraries are free with no runtime quota. Additional runtime minutes beyond
+  included allotments are available via consumption-based pricing.
+sources:
+  - https://testcontainers.com/cloud/pricing/
+plans:
+  - id: testcontainers-open-source
+    name: Open Source
+    type: free
+    description: >-
+      The Testcontainers open-source libraries are free to use with no
+      runtime quota. Requires a local Docker daemon. No cloud runtime
+      minutes included.
+    entries:
+      - label: Cloud Runtime Minutes
+        name: cloud_runtime_minutes
+        type: quota
+        metric: worker_minutes
+        limit: 0
+        timeFrame: month
+        geo: global
+        unit: 1
+        price: '0.00'
+        userMultiplied: false
+      - label: Open-Source Library Access
+        name: oss_library_access
+        type: boolean
+        metric: access
+        limit: -1
+        timeFrame: usage
+        geo: global
+        unit: 1
+        price: '0.00'
+        userMultiplied: false
+  - id: testcontainers-free-trial
+    name: Free Trial
+    type: freemium
+    description: >-
+      One-time free trial of Testcontainers Cloud providing 50 minutes of
+      cloud runtime on the Desktop. CI usage limited to a single Service
+      Account running a single session at a time. Turbo mode is disabled.
+    entries:
+      - label: Cloud Runtime Minutes (one-time trial)
+        name: cloud_runtime_minutes_trial
+        type: quota
+        metric: worker_minutes
+        limit: 50
+        timeFrame: usage
+        geo: global
+        unit: 1
+        price: '0.00'
+        userMultiplied: false
+      - label: Turbo Mode (parallel workers)
+        name: turbo_mode
+        type: boolean
+        metric: access
+        limit: 0
+        timeFrame: usage
+        geo: global
+        unit: 1
+        price: '0.00'
+        userMultiplied: false
+  - id: testcontainers-docker-pro
+    name: Docker Pro (includes Testcontainers Cloud)
+    type: paid
+    description: >-
+      Docker Pro subscription includes Testcontainers Cloud with 100
+      Worker Minutes per month per seat. Per-seat Testcontainers Cloud
+      licenses are waived for Docker subscribers.
+    entries:
+      - label: Cloud Runtime Minutes
+        name: cloud_runtime_minutes
+        type: quota
+        metric: worker_minutes
+        limit: 100
+        timeFrame: month
+        geo: global
+        unit: 1
+        price: 'included'
+        userMultiplied: true
+  - id: testcontainers-docker-team
+    name: Docker Team (includes Testcontainers Cloud)
+    type: paid
+    description: >-
+      Docker Team subscription includes Testcontainers Cloud with 500
+      Worker Minutes per month per seat. Desktop fair-use quota of 3,000
+      Worker Minutes per seat per month applies.
+    entries:
+      - label: Cloud Runtime Minutes
+        name: cloud_runtime_minutes
+        type: quota
+        metric: worker_minutes
+        limit: 500
+        timeFrame: month
+        geo: global
+        unit: 1
+        price: 'included'
+        userMultiplied: true
+      - label: Fair Use Desktop Quota
+        name: fair_use_desktop
+        type: quota
+        metric: worker_minutes
+        limit: 3000
+        timeFrame: month
+        geo: global
+        unit: 1
+        price: 'included'
+        userMultiplied: true
+  - id: testcontainers-docker-business
+    name: Docker Business (includes Testcontainers Cloud)
+    type: paid
+    description: >-
+      Docker Business subscription includes Testcontainers Cloud with
+      1,500 Worker Minutes per month per seat. Includes turbo mode for
+      parallel test execution.
+    entries:
+      - label: Cloud Runtime Minutes
+        name: cloud_runtime_minutes
+        type: quota
+        metric: worker_minutes
+        limit: 1500
+        timeFrame: month
+        geo: global
+        unit: 1
+        price: 'included'
+        userMultiplied: true
