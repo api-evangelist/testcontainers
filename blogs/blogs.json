@@ -4,11 +4,18 @@
     {
       "source": "https://newsletter.testcontainers.com/",
       "feed_url": "https://newsletter.testcontainers.com/",
-      "title": "Testcontainers Newsletter / Updates",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    },
+    {
+      "source": "https://www.linkedin.com/company/atomicjar",
+      "feed_url": "https://www.linkedin.com/company/atomicjar",
+      "title": "",
       "saved": 0,
       "method": "none"
     }
   ],
   "post_count": 0,
-  "fetched": "2026-06-12T00:00:00Z"
+  "fetched": "2026-06-14T20:42:17Z"
 }
