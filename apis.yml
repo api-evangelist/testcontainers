@@ -93,7 +93,7 @@ common:
     url: rate-limits/testcontainers-rate-limits.yml
   - type: FinOps
     url: finops/testcontainers-finops.yml
-  - type: BlogFeeds
+  - type: BlogFeed
     url: blogs/blogs.json
   - type: JSONLDContext
     url: json-ld/testcontainers-context.jsonld

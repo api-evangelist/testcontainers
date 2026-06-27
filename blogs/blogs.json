@@ -2,20 +2,11 @@
   "repo": "testcontainers",
   "feeds": [
     {
-      "source": "https://newsletter.testcontainers.com/",
-      "feed_url": "https://newsletter.testcontainers.com/",
-      "title": "",
+      "source": "https://atomicjar.com/category/testcontainers/",
       "saved": 0,
-      "method": "none"
-    },
-    {
-      "source": "https://www.linkedin.com/company/atomicjar",
-      "feed_url": "https://www.linkedin.com/company/atomicjar",
-      "title": "",
-      "saved": 0,
-      "method": "none"
+      "error": "302 redirect to docker.com; atomicjar blog gone"
     }
   ],
   "post_count": 0,
-  "fetched": "2026-06-14T20:42:17Z"
+  "fetched": "2026-06-27T13:15:57Z"
 }
