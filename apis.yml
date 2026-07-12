@@ -67,6 +67,8 @@ apis:
       - type: GitHubRepository
         url: https://github.com/testcontainers
 common:
+  - type: DomainSecurity
+    url: security/testcontainers-domain-security.yml
   - type: Website
     url: https://testcontainers.com/
   - type: Documentation
