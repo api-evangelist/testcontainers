@@ -2,11 +2,10 @@
   "repo": "testcontainers",
   "feeds": [
     {
-      "source": "https://atomicjar.com/category/testcontainers/",
-      "saved": 0,
-      "error": "302 redirect to docker.com; atomicjar blog gone"
+      "source": "https://www.linkedin.com/company/atomicjar",
+      "error": "HTTPError"
     }
   ],
   "post_count": 0,
-  "fetched": "2026-06-27T13:15:57Z"
+  "fetched": "2026-07-11T11:50:51Z"
 }
