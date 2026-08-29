@@ -14,6 +14,17 @@ description: >-
   token, and usage is metered in Worker Minutes bundled with Docker Pro, Team,
   and Business subscriptions.
 type: Index
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: unknown
