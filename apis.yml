@@ -79,10 +79,10 @@ apis:
     humanURL: https://testcontainers.com/getting-started/
     baseURL: https://github.com/testcontainers
     tags:
-      - Open-Source
+      - Open Source
       - Testing
       - Docker
-      - Libraries
+      - Library
       - SDK
     tags_raw:
       - Open Source
@@ -90,6 +90,7 @@ apis:
       - Docker
       - Libraries
       - SDKs
+      - Open-Source
     properties:
       - type: Documentation
         url: https://testcontainers.com/getting-started/
