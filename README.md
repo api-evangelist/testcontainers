@@ -1,4 +1,4 @@
-# Testcontainers (testcontainers)
+# Testcontainers
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,55 +64,113 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Testcontainers is an open-source library ecosystem and cloud service for integration testing with real Docker containers. The libraries support more than a dozen programming languages and provide a programmatic API for spinning up throwaway container instances — databases, message brokers, browsers, and more — during automated tests. Testcontainers Cloud extends this to a hosted runtime that eliminates the need for a local Docker daemon, enabling parallel container-backed test execution in CI/CD pipelines with service account token authentication and Worker Minute-based billing bundled into Docker subscriptions.
+Testcontainers is an open-source library ecosystem that provides throwaway, lightweight Docker container instances for integration testing across more than a dozen programming languages including Java, Go, .NET, Node.js, and Python. Developers define real test dependencies — databases, message brokers, browsers — as code rather than relying on mocks or shared environments. Testcontainers Cloud extends the library to a hosted container runtime service that runs container-backed tests in the cloud, eliminating the need for a local Docker daemon and enabling parallel execution in CI/CD pipelines. The platform authenticates via a TC_CLOUD_TOKEN environment variable or service account token, and usage is metered in Worker Minutes bundled with Docker Pro, Team, and Business subscriptions.
 
-APIs.json: [https://raw.githubusercontent.com/api-evangelist/testcontainers/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/testcontainers/refs/heads/main/apis.yml)
+**Areas:** Testing · Integration Testing · Docker · Containers · CI/CD · Developer Tools
 
-Naftiko: [https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=testcontainers-api-evangelist&utm_content=repo](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=testcontainers-api-evangelist&utm_content=repo)
+## Testcontainers on APIs.io
 
-## Tags
+Everything profiled for Testcontainers is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/testcontainers/](https://apis.io/providers/testcontainers/)** — or go straight to one of the APIs or properties below.
 
-- Testing
-- Integration Testing
-- Docker
-- Containers
-- CI/CD
-- Developer Tools
+### APIs (2)
 
-## APIs
+- [Testcontainers Cloud Agent API](https://apis.io/apis/testcontainers/cloud-agent-api/) — The Testcontainers Cloud Agent API enables CI/CD pipelines and desktop environments to allocate hosted Docker container workers in the cloud. Authentication…
+- [Testcontainers Open-Source Libraries](https://apis.io/apis/testcontainers/open-source-libraries/) — A family of open-source libraries providing a programmatic API for spinning up and tearing down Docker containers in automated tests. Implementations exist…
 
-- **Testcontainers Cloud Agent API** — Hosted container runtime for CI/CD pipelines and desktop environments; authenticated via TC_CLOUD_TOKEN service account tokens.
-  - Documentation: https://testcontainers.com/cloud/docs/
-- **Testcontainers Open-Source Libraries** — Multi-language open-source libraries for container-backed integration testing.
-  - Documentation: https://testcontainers.com/getting-started/
-  - GitHub: https://github.com/testcontainers
+### Published properties
 
-## Plans / Rate Limits / FinOps
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-- Plans & Pricing: [plans/testcontainers-plans-pricing.yml](plans/testcontainers-plans-pricing.yml)
-- Rate Limits: [rate-limits/testcontainers-rate-limits.yml](rate-limits/testcontainers-rate-limits.yml)
-- FinOps: [finops/testcontainers-finops.yml](finops/testcontainers-finops.yml)
+#### JSON-LD (1)
 
-## Timestamps
+Linked-data contexts for the provider's vocabulary.
 
-- Created: 2026-06-12
-- Modified: 2026-06-12
+- [Testcontainers Context](https://apis.io/jsonld/testcontainers/testcontainers-context/)
 
-## Common Properties
+#### Security (1)
 
-| Type | URL |
-|------|-----|
-| Website | https://testcontainers.com/ |
-| Documentation | https://testcontainers.com/cloud/docs/ |
-| Getting Started | https://testcontainers.com/getting-started/ |
-| GitHub Organization | https://github.com/testcontainers |
-| LinkedIn | https://www.linkedin.com/company/atomicjar |
-| Blog | https://atomicjar.com/category/testcontainers/ |
-| Newsletter | https://newsletter.testcontainers.com/ |
-| Pricing | https://testcontainers.com/cloud/pricing/ |
-| X (Twitter) | https://x.com/testcontainers |
-| Slack | https://slack.testcontainers.org/ |
+Authentication, trust centre, and vulnerability disclosure.
 
-## Maintainers
+- [Testcontainers Domain Security](https://apis.io/security/testcontainers/testcontainers-domain-security/)
 
-- Kin Lane / kin@apievangelist.com
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Testcontainers Plans Pricing](https://apis.io/plans/testcontainers/testcontainers-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Testcontainers Rate Limits](https://apis.io/rate-limits/testcontainers/testcontainers-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Testcontainers Finops](https://apis.io/finops/testcontainers/testcontainers-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://testcontainers.com/)
+- [Documentation](https://testcontainers.com/cloud/docs/)
+- [Getting started](https://testcontainers.com/getting-started/)
+- [Pricing](https://testcontainers.com/cloud/pricing/)
+- [Blog](https://atomicjar.com/category/testcontainers/)
+- [GitHub](https://github.com/testcontainers)
+
+## API Evangelist rating
+
+**Kin Score 18.9** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 10.7 |
+| Contract governance | 0.0 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 26.2 |
+| Access clarity | 18.4 |
+
+**Agent readiness 0.6** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 10.8** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/testcontainers/](https://apis.io/providers/testcontainers/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Testcontainers: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/testcontainers/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
